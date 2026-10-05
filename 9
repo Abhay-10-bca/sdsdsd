@@ -1,0 +1,17 @@
+IR Sensor + LED + Buzzer → ESP32
+
+IR Sensor (analog output)
+
+VCC → ESP32 3.3V
+GND → ESP32 GND
+AO / OUT → ESP32 GPIO 34
+
+LED
+
+LED anode (+, long leg) → ESP32 GPIO 2
+LED cathode (−, short leg) → 220Ω resistor → GND
+
+Buzzer
+
+Buzzer + → ESP32 GPIO 25
+Buzzer − → ESP32 GND
