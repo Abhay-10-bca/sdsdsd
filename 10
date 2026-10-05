@@ -1,0 +1,20 @@
+HC-SR04 + LED + Buzzer → ESP32
+
+HC-SR04
+
+VCC → ESP32 5V / VIN
+GND → ESP32 GND
+TRIG → ESP32 GPIO 5
+ECHO → ESP32 GPIO 18
+
+⚠️ Important: HC-SR04 ECHO outputs 5V, while ESP32 GPIOs are 3.3V. Use a voltage divider/level shifter between ECHO and GPIO 18.
+
+LED
+
+LED anode (+) → ESP32 GPIO 2
+LED cathode (−) → 220Ω resistor → GND
+
+Buzzer
+
+Buzzer + → ESP32 GPIO 25
+Buzzer − → GND
