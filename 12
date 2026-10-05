@@ -1,0 +1,11 @@
+So the connections are:
+
+LDR leg 1 → ESP32 3.3V
+LDR leg 2 → ESP32 GPIO 34
+10kΩ resistor leg 1 → ESP32 GPIO 34
+10kΩ resistor leg 2 → ESP32 GND
+
+LED anode (+) → GPIO 2
+LED cathode (-) → 220Ω resistor → GND
+Buzzer + → GPIO 4
+Buzzer − → GND
