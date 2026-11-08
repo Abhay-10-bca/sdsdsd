@@ -1,0 +1,22 @@
+Install Libraries
+
+Arduino IDE → Sketch → Include Library → Manage Libraries.
+Install ThingSpeak by MathWorks.
+Install DHT sensor library by Adafruit.
+Install Adafruit Unified Sensor when prompted.
+WiFi is provided with the ESP32 board package.
+
+
+DHT11 → ESP32
+- DHT11 VCC (+) → ESP32 3.3V
+- DHT11 GND (−) → ESP32 GND
+- DHT11 DATA/OUT → ESP32 GPIO 4
+- 10kΩ resistor → between VCC and DATA (if not already built into the module)
+Wi-Fi / ThingSpeak
+- No additional physical connections required.
+- ESP32 uploads temperature and humidity data wirelessly.
+ThingSpeak fields:
+- Field 1 → Temperature
+- Field 2 → Humidity
+Note: Replace the Wi-Fi name, password, channel ID and Write API Key with your actual credentials.
+
