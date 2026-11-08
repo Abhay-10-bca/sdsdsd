@@ -1,0 +1,12 @@
+LED
+- LED anode (+, long leg) → ESP32 GPIO 25
+- LED cathode (−, short leg) → 220Ω resistor → GND
+Buzzer
+- Buzzer + → ESP32 GPIO 27
+- Buzzer − → ESP32 GND
+Wi-Fi / Blynk
+- No physical connections required.
+- ESP32 connects to Wi-Fi wirelessly.
+- Blynk controls:
+  - V0 → LED ON/OFF
+  - V1 → Buzzer ON/OFF
